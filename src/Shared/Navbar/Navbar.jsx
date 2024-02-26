@@ -20,7 +20,7 @@ export const Navbar = () => {
                 {arrayOfNavLinks.map((item, index) => (
                     <li key={index} className="group flex cursor-pointer flex-col">
                         {item}
-                        <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-white transition-all duration-700 group-hover:w-full"></span>
+                        <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-blue-700  transition-all duration-700 group-hover:w-full"></span>
                     </li>
                 ))}
             </ul>
