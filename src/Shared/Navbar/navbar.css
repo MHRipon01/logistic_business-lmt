@@ -8,7 +8,7 @@
     overflow: hidden;
     border-radius: 8px;
     max-height: 0; 
-    transition: max-height 0.7s ease;
+    transition: max-height 1.1s ease;
 }
 .dropdown-menu.open {
     max-height: 200px; 

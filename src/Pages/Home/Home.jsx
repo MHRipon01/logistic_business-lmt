@@ -1,6 +1,7 @@
 import { Navbar } from "../../Shared/Navbar/Navbar";
 import Banner from "./Banner/Banner";
 import Freights from "./Freights/Freights";
+import LogisticText from "./LogisticText/LogisticText";
 
 
  
@@ -10,6 +11,7 @@ const Home = () => {
             <Navbar></Navbar>
             <Banner />
             <Freights />
+            <LogisticText />
         </div>
     );
 };
