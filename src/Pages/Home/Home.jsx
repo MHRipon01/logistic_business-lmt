@@ -3,6 +3,7 @@ import Banner from "./Banner/Banner";
 import FocusedIndustries from "./FocusedIndustries/FocusedIndustries";
 import Freights from "./Freights/Freights";
 import LogisticText from "./LogisticText/LogisticText";
+import Statistics from "./Statistics/Statistics";
 
 
  
@@ -14,6 +15,7 @@ const Home = () => {
             <Freights />
             <LogisticText />
             <FocusedIndustries />
+            <Statistics />
         </div>
     );
 };
