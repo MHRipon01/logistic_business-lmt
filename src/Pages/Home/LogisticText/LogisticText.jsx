@@ -1,3 +1,4 @@
+ 
 const textData = {
   header:
     "Logistic Business Solution Ltd is prepared to assist our customers in maximizing opportunities through reliable supply chain management.",
@@ -11,9 +12,7 @@ const LogisticText = () => {
         <h3 className="lg:text-5xl md:text-4xl text-xl font-bold ">
           {textData.header}
         </h3>
-        <p className="lg:text-xl md:text-lg my-7">
-          {textData.paragraph}
-        </p>
+        <p className="lg:text-xl md:text-lg my-7">{textData.paragraph}</p>
       </div>
     </section>
   );
