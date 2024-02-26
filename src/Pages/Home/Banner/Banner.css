@@ -1,0 +1,16 @@
+ 
+@keyframes growText {
+    0% {
+      font-size: 0px;
+    }
+    100% {
+      font-size: 30px;
+    }
+  }
+  
+  .animated-text {
+    display: inline-block;
+    font-size: 10px;
+    animation: growText 5s forwards; /* Adjust the duration as needed */
+  } 
+   

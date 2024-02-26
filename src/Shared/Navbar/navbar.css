@@ -1,0 +1,15 @@
+/* navbar.css */
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 38px; /* Adjusted top position to align with the button */
+    background-color: #909ed0;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    max-height: 0; 
+    transition: max-height 0.7s ease;
+}
+.dropdown-menu.open {
+    max-height: 200px; 
+}
