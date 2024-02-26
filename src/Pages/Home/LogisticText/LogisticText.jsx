@@ -1,4 +1,3 @@
- 
 const textData = {
   header:
     "Logistic Business Solution Ltd is prepared to assist our customers in maximizing opportunities through reliable supply chain management.",

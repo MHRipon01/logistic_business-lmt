@@ -12,7 +12,7 @@ const Statistics = () => {
   return (
     <div>
       <Title title={"Our Statistics"} />
-      
+
       <div className="my-8 grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-center ">
         {statisticsData.map((statistic, index) => (
           <div

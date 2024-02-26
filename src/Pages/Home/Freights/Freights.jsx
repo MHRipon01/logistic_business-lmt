@@ -46,7 +46,7 @@ const Freights = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-3">
         {freightData.map((freight, index) => (
           <div
-          data-aos="flip-left"
+            data-aos="flip-left"
             key={index}
             className="p-4 border rounded-md hover:shadow-xl hover:shadow-blue-300"
           >

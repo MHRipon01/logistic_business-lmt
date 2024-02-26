@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
-import './Banner.css'
+import "./Banner.css";
 const sliderData = [
   {
     image: "https://i.ibb.co/QJTXGKB/image.png",
@@ -31,7 +31,6 @@ const sliderData = [
   },
 ];
 
-
 const Banner = () => {
   const [animationClass, setAnimationClass] = useState("");
 
@@ -44,8 +43,6 @@ const Banner = () => {
     return () => clearTimeout(timeoutId);
   }, []);
 
-
-
   var settings = {
     dots: false,
     infinite: true,
@@ -57,20 +54,28 @@ const Banner = () => {
     autoplaySpeed: 5000,
     fade: true,
     pauseOnHover: false,
-  }; return (
+  };
+  return (
     <div>
       <Slider {...settings}>
         {sliderData?.map((singleData, index) => (
           <div key={index} className={`h-full relative`}>
-            <div className={`bg-cover bg-center relative text-${singleData.textColor}`}>
-              <img className="lg:min-h-[900px] md:min-h-[514px] min-h-64" src={singleData.image} alt="" />
+            <div
+              className={`bg-cover bg-center relative text-${singleData.textColor}`}
+            >
+              <img
+                className="lg:min-h-[900px] md:min-h-[514px] min-h-64"
+                src={singleData.image}
+                alt=""
+              />
               <h2
                 id="animated-text"
                 className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center lg:mx-auto w-full h-full flex justify-center items-center`}
                 style={{
                   fontSize: animationClass ? "40px" : "10px",
                   transition: "font-size 5s",
-                }}>
+                }}
+              >
                 {singleData.text}
               </h2>
             </div>

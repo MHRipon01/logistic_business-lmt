@@ -38,12 +38,9 @@ const FocusedIndustries = () => {
   return (
     <div>
       <Title title={"Our Focused Industries"} />
-      <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-11 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-11 ">
         {focusedData?.map((singleData, index) => (
-          <div
-          data-aos="zoom-in"
-           key={index}>
-
+          <div data-aos="zoom-in" key={index}>
             <div className="image-container relative overflow-hidden group rounded-lg">
               <img
                 src={singleData?.image}
@@ -54,7 +51,7 @@ const FocusedIndustries = () => {
               <div className="details-overlay absolute top-0 left-0 w-full h-full bg-black opacity-0 group-hover:opacity-60 transition-opacity">
                 <div className="details-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-center">
                   <h3 className="text-4xl font-bold text-white my-5">
-                  {singleData?.name}
+                    {singleData?.name}
                   </h3>
                   <button className="text-white px-5 py-2 border-2">
                     VIEW PROJECTS
