@@ -1,5 +1,6 @@
 import { Navbar } from "../../Shared/Navbar/Navbar";
 import Banner from "./Banner/Banner";
+import FocusedIndustries from "./FocusedIndustries/FocusedIndustries";
 import Freights from "./Freights/Freights";
 import LogisticText from "./LogisticText/LogisticText";
 
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner />
             <Freights />
             <LogisticText />
+            <FocusedIndustries />
         </div>
     );
 };
