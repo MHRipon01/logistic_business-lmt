@@ -40,7 +40,10 @@ const FocusedIndustries = () => {
       <Title title={"Our Focused Industries"} />
       <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-11 ">
         {focusedData?.map((singleData, index) => (
-          <div key={index}>
+          <div
+          data-aos="zoom-in"
+           key={index}>
+
             <div className="image-container relative overflow-hidden group rounded-lg">
               <img
                 src={singleData?.image}
