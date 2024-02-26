@@ -1,0 +1,15 @@
+.service-container {
+    overflow: hidden;
+  }
+  
+  .hover-container {
+    border: 2px solid transparent;
+    transition: box-shadow 0.9s ease-in-out, transform 0.9s ease-in-out;
+  }
+  
+  .hover-container:hover {
+    border: 2px inset; /* Specify border style and color here */
+    box-shadow: 0 0 20px rgba(10, 0, 0, 0.3); /* Adjust the shadow as needed */
+    transform: translateY(-10px) translateX(-10px) ; /* Adjust the distance floated up and to the left */
+  }
+  

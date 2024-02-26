@@ -1,4 +1,3 @@
- 
 import Title from "../../../Shared/Title";
 
 const freightData = [
@@ -43,23 +42,26 @@ const freightData = [
 const Freights = () => {
   return (
     <div>
-     <Title title={ 'Freights we offer'}/>
+      <Title title={"Freights we offer"} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-3">
         {freightData.map((freight, index) => (
           <div
             key={index}
             className="p-4 border rounded-md hover:shadow-xl hover:shadow-blue-300"
           >
-              <img
-                src={freight.image}
-                alt={freight?.type}
-                className="mb-4 w-full h-[337px] rounded-md"
-              />
-              <h3 className="text-xl font-semibold mb-2">{freight?.type}</h3>
-              <p className="text-gray-600">{freight?.description}</p>
-              <button className="bg-gray-500 flex justify-center p-4 mx-auto text-white rounded-lg mt-4">
-                Read More
+            <img
+              src={freight.image}
+              alt={freight?.type}
+              className="mb-4 w-full h-[337px] rounded-md"
+            />
+            <h3 className="text-xl font-semibold mb-2">{freight?.type}</h3>
+            <p className="text-gray-600">{freight?.description}</p>
+
+            <div className=" flex justify-center p-4 mx-auto text-white rounded-lg mt-4">
+              <button className="rounded-lg before:ease relative h-12 w-40 overflow-hidden border border-blue-500 text-blue-500 shadow-2xl transition-all before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-blue-500 before:duration-300 hover:text-white hover:shadow-blue-500 hover:before:h-64 hover:before:-translate-y-32">
+                <span className="relative z-10">Read More</span>
               </button>
+            </div>
           </div>
         ))}
       </div>
